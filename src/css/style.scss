@@ -1,0 +1,102 @@
+$color-green:#6A983C;
+$color-black:#151515;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .row-nav-bar {
+            display: flex;
+            height: 48px;
+            margin: 0 45px 0 45px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 45px 0 45px;
+            p {
+                font-family: 'Open Sans';
+                font-size: 12px;
+                line-height: 16px;
+                color: $color-green;
+            }
+            .start {
+                display: flex;
+                width: 36%;
+                justify-content: space-between;
+            }
+            .end {
+                display: flex;
+                width: 20%;
+                justify-content: space-between;
+            }
+        }
+        hr {
+            opacity: 0.05;
+            border: 1px solid #151515;
+            padding: 0 45px 0 45px;
+        }
+        .row-main {
+            height: 146px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 45px 0 45px;
+            .icons {
+                display: flex;
+                width: 8%;
+                justify-content: space-between;
+            }
+            form {
+                background: #F9F9F9;
+                border-radius: 12px;
+                border: 1px solid #D1D1D1;
+                height: 42px;
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0px 16px;
+                select {
+                    width: 31%;
+                    border-width: 0;
+                    /* font-family: Poppins; */
+                    font-weight: bold;
+                    font-size: 15px;
+                    line-height: 22px;
+                    text-align: center;
+                    appearance: none;
+                    background-color: rgba(249, 249, 249, 0);
+                    background: url(../assets/images/ic-chevron-down.svg) no-repeat right rgba(249, 249, 249, 0);
+                }
+                hr {
+                    transform: rotate(90deg);
+                    width: 20px;
+                    height: 0px;
+                }
+                input[type=text] {
+                    /* font-family: Open Sans; */
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #A9A9A9;
+                    background: rgba(249, 249, 249, 0);
+                    border-width: 0;
+                    width: 262px;
+                }
+            }
+        }
+        .row-ctg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 55px;
+            background: #F9F9F9;
+            padding: 0 45px 0 45px;
+        }
+    }
+}
