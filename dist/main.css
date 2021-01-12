@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(fonts/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-Regular.ttf) format("truetype");
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -64,14 +72,14 @@
 .container .header .row-main form select {
   width: 31%;
   border-width: 0;
-  /* font-family: Poppins; */
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 15px;
   line-height: 22px;
   text-align: center;
   appearance: none;
   background-color: rgba(249, 249, 249, 0);
-  background: url(../assets/images/ic-chevron-down.svg) no-repeat right rgba(249, 249, 249, 0);
+  background: url(images/ic-chevron-down.svg) no-repeat right rgba(249, 249, 249, 0);
 }
 .container .header .row-main form hr {
   transform: rotate(90deg);
@@ -95,5 +103,3 @@
   background: #F9F9F9;
   padding: 0 45px 0 45px;
 }
-
-/*# sourceMappingURL=style.css.map */

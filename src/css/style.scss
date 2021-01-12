@@ -1,3 +1,5 @@
+@import "_fonts.scss";
+
 $color-green:#6A983C;
 $color-black:#151515;
 
@@ -65,7 +67,7 @@ $color-black:#151515;
                 select {
                     width: 31%;
                     border-width: 0;
-                    /* font-family: Poppins; */
+                    font-family: 'Poppins', sans-serif;
                     font-weight: bold;
                     font-size: 15px;
                     line-height: 22px;
