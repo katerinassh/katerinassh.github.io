@@ -3,6 +3,12 @@
 $color-green:#6A983C;
 $color-black:#151515;
 
+%flexibility {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -15,11 +21,8 @@ $color-black:#151515;
         flex-direction: column;
         width: 100%;
         .row-nav-bar {
-            display: flex;
+            @extend %flexibility;
             height: 48px;
-            margin: 0 45px 0 45px;
-            justify-content: space-between;
-            align-items: center;
             padding: 0 45px 0 45px;
             p {
                 font-family: 'Open Sans';
@@ -41,18 +44,20 @@ $color-black:#151515;
         hr {
             opacity: 0.05;
             border: 1px solid #151515;
-            padding: 0 45px 0 45px;
+            width: 95%;
+            margin: auto;
         }
         .row-main {
+            @extend %flexibility;
             height: 146px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             padding: 0 45px 0 45px;
             .icons {
                 display: flex;
                 width: 8%;
                 justify-content: space-between;
+                img {
+                    cursor: pointer;
+                }
             }
             form {
                 background: #F9F9F9;
@@ -60,12 +65,10 @@ $color-black:#151515;
                 border: 1px solid #D1D1D1;
                 height: 42px;
                 width: 45%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                @extend %flexibility;
                 padding: 0px 16px;
                 select {
-                    width: 31%;
+                    width: 40%;
                     border-width: 0;
                     font-family: 'Poppins', sans-serif;
                     font-weight: bold;
@@ -80,6 +83,9 @@ $color-black:#151515;
                     transform: rotate(90deg);
                     width: 20px;
                     height: 0px;
+                    opacity: 1;
+                    border: 1px solid #D1D1D1;
+                    padding: 0;
                 }
                 input[type=text] {
                     /* font-family: Open Sans; */
@@ -93,12 +99,143 @@ $color-black:#151515;
             }
         }
         .row-ctg {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @extend %flexibility;
             height: 55px;
             background: #F9F9F9;
             padding: 0 45px 0 45px;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            p {
+                cursor: pointer;
+            }
         }
+        .row-way {
+            padding: 16px 45px;
+            font-family: Open Sans;
+            font-size: 12px;
+            line-height: 16px;
+            p {
+                cursor: pointer;
+            }
+            span {
+                color: #A9A9A9;
+            }
+        }
+    }
+    .product {
+        display: flex;
+        padding: 16px 0px 0px 42.5px;
+        .pictures {
+            .offers {
+                padding-right: 32px;
+                display: flex;
+                align-items: flex-start;
+                position: absolute;
+                z-index: 3;
+                top: 16px;
+                left: 16px;
+                p {
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: $color-green;
+                }
+                .offer-discount {
+                    background: #F4F8EC;
+                    border-radius: 12px;
+                    padding: 4px 10px;
+                    margin-right: 12px;
+                }
+                .offer-delivery {
+                    background: #F4F8EC;
+                    border-radius: 12px;
+                    padding: 4px 10px;
+                }
+            }
+            .picture-offer {
+                position: relative;
+                img {
+                    padding: 0px 32px 16px 0px;
+                    width: 569px;
+                    height: 437px;
+                }
+            }
+            .picture {
+                img {
+                    padding: 0px 32px 16px 0px;
+                    width: 569px;
+                    height: 437px;
+                }
+            }
+        }
+        .product-info {
+            padding-right: 47.17px;
+            font-family: 'Poppins';
+            h1 {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 140%;
+                color: #151515;
+            }
+            .rating {
+                display: flex;
+                align-items: center;
+                .stars {
+                    display: flex;
+                }
+                p {
+                    margin-left: 9.26px;
+                    font-family: 'Open Sans';
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-decoration: underline;
+                }
+            }
+            .description {
+                padding: 30px 0;
+                width: 92%;
+                p {
+                    font-size: 17px;
+                    line-height: 23px;
+                }
+            }
+            .row-structured {
+                display: flex;
+                p {
+                    font-size: 14px;
+                    line-height: 19px;
+                    padding: 8px 5px;
+                }
+                .col-key {
+                    color: #A9A9A9;
+                }
+                .col-4-1 {
+                    display: flex;
+                    .col-value {
+                        p {
+                            padding-right: 35px;
+                        }
+                        .in-stock {
+                            color: $color-green;
+                        }
+                        .category {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .col-4-2 {
+                    display: flex;
+                    .col-value {
+                        p {
+                            padding-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    
     }
 }
