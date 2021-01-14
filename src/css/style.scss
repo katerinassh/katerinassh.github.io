@@ -213,7 +213,7 @@ $color-black:#151515;
                     border: 1px solid #F5F5F5;
                     box-sizing: border-box;
                     border-radius: 12px;
-                    width: 534px;
+                    width: 80%;
                     margin: 20px 0;
                     height: 89px;
                     @extend %flexibility;
@@ -281,6 +281,79 @@ $color-black:#151515;
                     .compare {
                         @extend %button-row-buttons;
                         width: 119px;
+                    }
+                }
+                .tab {
+                    margin-top: 62px;
+                    .tab-header {
+                        @extend %flexibility;
+                        width: 95%;
+                        .tab-header-1, .tab-header-2, .tab-header-3 {
+                            cursor: pointer;
+                            h2 {
+                                font-size: 18px;
+                                line-height: 27px;
+                                font-weight: 600;
+                            }
+                        }
+                        .tab-header-2, .tab-header-3 {
+                            display: flex;
+                            align-items: center;
+                            p {
+                                @extend %offer;
+                                color:$color-green;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                    .line {
+                        padding: 16px 0px;
+                        .line-grey {
+                            position: relative;
+                            border: 1px solid #F5F5F5;
+                        }
+                        .line-green {
+                            position: absolute;
+                            border: 1px solid $color-green;
+                            width: 15%;
+                        }
+                    }
+                    .tab-body {
+                        h4 {
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 22px;
+                            padding: 32px 0px 8px;
+                        }
+                        p {
+                            font-size: 14px;
+                            line-height: 19px;
+                            font-family: 'Open Sans';
+                        }
+                        table {
+                            margin-top: 16px;
+                            width: 90%;
+                            border-collapse: collapse;
+                            th {
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 18px;
+                                text-align: start;
+                                border-bottom: 1px solid #EBEBEB;
+                                padding-bottom: 7px;
+                                width: 33.3%;
+                            }
+                            td {
+                                font-size: 14px;
+                                line-height: 19px;
+                                font-family: 'Open Sans';
+                                color: #575757;
+                                padding: 11px 34px 10px 0px;
+                            }
+                            .color-C1-I {
+                                background: #FDFDFD;
+                            }
+                        }
                     }
                 }
             }
