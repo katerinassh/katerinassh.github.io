@@ -11,6 +11,7 @@
     text-align: center;
     appearance: none;
     background-color: rgba(249, 249, 249, 0);
+    outline: none;
 }
 %input {
     font-family: Open Sans;
@@ -19,6 +20,7 @@
     color: #A9A9A9;
     background: rgba(249, 249, 249, 0);
     border-width: 0;
+    outline: none;
 }
 %hr-rotated {
     transform: rotate(90deg);

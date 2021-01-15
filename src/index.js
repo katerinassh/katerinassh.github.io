@@ -1,3 +1,37 @@
  import './css/style.scss'
 
- console.log('JS work!')
+ const tabHeader1 = document.querySelector('.tab-header-1'),
+    tabBody1 = document.querySelector('.tab-body-1'),
+    tabHeader2 = document.querySelector('.tab-header-2'),
+    tabBody2 = document.querySelector('.tab-body-2'),
+    tabHeader3 = document.querySelector('.tab-header-3'),
+    tabBody3 = document.querySelector('.tab-body-3'),
+    greenLine = document.querySelector('.line-green');
+
+const openTab1 = () => {
+    {
+        tabBody1.style.display = 'block';
+        tabBody2.style.display = 'none';
+        tabBody3.style.display = 'none';
+        greenLine.style.cssText = 'left: 0%; width: 30%';
+    }
+};
+
+const openTab2 = () => {
+    tabBody1.style.display = 'none';
+    tabBody2.style.display = 'block';
+    tabBody3.style.display = 'none';
+    greenLine.style.cssText = 'left: 27%; width: 34%';
+};
+
+const openTab3 = () => {
+    tabBody1.style.display = 'none';
+    tabBody2.style.display = 'none';
+    tabBody3.style.display = 'block';
+    greenLine.style.cssText = 'left: 66%; width: 34%';
+};
+
+
+tabHeader1.addEventListener('click', openTab1);
+tabHeader2.addEventListener('click', openTab2);
+tabHeader3.addEventListener('click', openTab3);

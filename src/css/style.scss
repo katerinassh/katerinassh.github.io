@@ -290,15 +290,13 @@ $color-black:#151515;
                         width: 95%;
                         .tab-header-1, .tab-header-2, .tab-header-3 {
                             cursor: pointer;
+                            display: flex;
+                            align-items: center;
                             h2 {
                                 font-size: 18px;
                                 line-height: 27px;
                                 font-weight: 600;
                             }
-                        }
-                        .tab-header-2, .tab-header-3 {
-                            display: flex;
-                            align-items: center;
                             p {
                                 @extend %offer;
                                 color:$color-green;
@@ -310,15 +308,30 @@ $color-black:#151515;
                         padding: 16px 0px;
                         .line-grey {
                             position: relative;
-                            border: 1px solid #F5F5F5;
-                        }
-                        .line-green {
-                            position: absolute;
-                            border: 1px solid $color-green;
-                            width: 15%;
+                            hr {
+                                border: 1px solid #F5F5F5;
+                            }
+                            .line-green {
+                                position: absolute;
+                                width: 30%;
+                                left: 0%;
+                                bottom: 0;
+                                transition: all 1s cubic-bezier(0.570, 0.005, 0.610, 0.875);
+                                hr {
+                                    border: 1px solid $color-green;
+                                }
+                            }
+                            
                         }
                     }
                     .tab-body {
+                        position: relative;
+                        .tab-body-1, .tab-body-2, .tab-body-3 {
+                            position: absolute;
+                        }
+                        .tab-body-2, .tab-body-3 {
+                            display: none;
+                        }
                         h4 {
                             font-weight: 500;
                             font-size: 15px;
