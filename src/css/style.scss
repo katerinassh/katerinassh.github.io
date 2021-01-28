@@ -53,8 +53,35 @@ $color-black:#151515;
                 display: flex;
                 width: 8%;
                 justify-content: space-between;
+                .icon-busket{
+                    background: url(../assets/images/ic-ecommerce-basket.svg) 100% 0% no-repeat;
+                    position: relative;
+                    width: 33px;
+                    cursor: pointer;
+                    img {
+                        position: relative;
+                        bottom: -11px;
+                    }
+                    p {
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #ffffff;
+                        position: absolute;
+                        bottom: 0.5px;
+                        left: 24%;
+                    }
+                    .one {
+                        left: 29%;
+                    }
+                    .more-than-nine {
+                        left: 19%;
+                        font-size: 10px;
+                    }
+                }
                 img {
                     cursor: pointer;
+                    height: 24px;
                 }
             }
             form {

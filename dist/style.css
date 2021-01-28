@@ -70,6 +70,7 @@
   justify-content: center;
   padding: 12px;
   cursor: pointer;
+  outline: none;
 }
 
 .container .main-body .cards-related-products .cards-4 .card-with-discount .picture-offer .offer-discount, .container .main-body .product .product-info .tab .tab-header .tab-header-1 p, .container .main-body .product .product-info .tab .tab-header .tab-header-2 p, .container .main-body .product .product-info .tab .tab-header .tab-header-3 p, .container .main-body .product .pictures .offers .offer-delivery, .container .main-body .product .pictures .offers .offer-discount {
@@ -132,8 +133,35 @@
   width: 8%;
   justify-content: space-between;
 }
+.container .header .row-main .icons .icon-busket {
+  background: url(images/ic-ecommerce-basket.svg) 100% 0% no-repeat;
+  position: relative;
+  width: 33px;
+  cursor: pointer;
+}
+.container .header .row-main .icons .icon-busket img {
+  position: relative;
+  bottom: -11px;
+}
+.container .header .row-main .icons .icon-busket p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0.5px;
+  left: 24%;
+}
+.container .header .row-main .icons .icon-busket .one {
+  left: 29%;
+}
+.container .header .row-main .icons .icon-busket .more-than-nine {
+  left: 19%;
+  font-size: 10px;
+}
 .container .header .row-main .icons img {
   cursor: pointer;
+  height: 24px;
 }
 .container .header .row-main form {
   background: #F9F9F9;

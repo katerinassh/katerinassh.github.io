@@ -1,5 +1,7 @@
  import './css/style.scss'
 
+ //Tabs
+
  const tabHeader1 = document.querySelector('.tab-header-1'),
     tabBody1 = document.querySelector('.tab-body-1'),
     tabHeader2 = document.querySelector('.tab-header-2'),
@@ -35,3 +37,31 @@ const openTab3 = () => {
 tabHeader1.addEventListener('click', openTab1);
 tabHeader2.addEventListener('click', openTab2);
 tabHeader3.addEventListener('click', openTab3);
+
+//Counter
+
+const btn = document.querySelector('.buy-button'),
+    mainCount = document.querySelector('.icon-busket p');
+
+function addToBusket() {
+    let count = +mainCount.textContent;
+    count += 1;
+    if (count >= 0 && count < 9) {
+        mainCount.textContent = count;
+        if (count === 1) {
+            mainCount.classList.add('one');
+        } else {
+            mainCount.classList.remove('one');
+        }
+    } else {
+        mainCount.textContent = '9+';
+        mainCount.classList.add('more-than-nine');
+    }
+    btn.removeEventListener('click', addToBusket);
+}
+
+btn.addEventListener('click', addToBusket);
+
+// btns.forEach(item => {
+//     item.addEventListener('click', addToBusket);
+// })
