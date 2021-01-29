@@ -2,41 +2,30 @@
 
  //Tabs
 
- const tabHeader1 = document.querySelector('.tab-header-1'),
-    tabBody1 = document.querySelector('.tab-body-1'),
-    tabHeader2 = document.querySelector('.tab-header-2'),
-    tabBody2 = document.querySelector('.tab-body-2'),
-    tabHeader3 = document.querySelector('.tab-header-3'),
-    tabBody3 = document.querySelector('.tab-body-3'),
-    greenLine = document.querySelector('.line-green');
+ const tabMainHeader = document.querySelector('.tab-all-headers'),
+    tabHeaders = document.querySelectorAll('.tab-header'),
+    tabBodies = document.querySelectorAll('.tab-body'),
+    greenLine = document.querySelector('.line-green');;
 
-const openTab1 = () => {
-    {
-        tabBody1.style.display = 'block';
-        tabBody2.style.display = 'none';
-        tabBody3.style.display = 'none';
-        greenLine.style.cssText = 'left: 0%; width: 30%';
-    }
-};
+function openTab(index) {
+    greenLine.className = 'line-green';
+    greenLine.classList.add('tab-' + (index + 1));
+    tabBodies.forEach((item, i) => {
+        if (i === index) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    })
+}
 
-const openTab2 = () => {
-    tabBody1.style.display = 'none';
-    tabBody2.style.display = 'block';
-    tabBody3.style.display = 'none';
-    greenLine.style.cssText = 'left: 27%; width: 34%';
-};
-
-const openTab3 = () => {
-    tabBody1.style.display = 'none';
-    tabBody2.style.display = 'none';
-    tabBody3.style.display = 'block';
-    greenLine.style.cssText = 'left: 66%; width: 34%';
-};
-
-
-tabHeader1.addEventListener('click', openTab1);
-tabHeader2.addEventListener('click', openTab2);
-tabHeader3.addEventListener('click', openTab3);
+tabMainHeader.addEventListener('click', event => {
+    tabHeaders.forEach((item, i) => {
+        if (event.target === item || event.target.parentElement === item) {
+            openTab(i);
+        }
+    })
+});
 
 //Counter
 
