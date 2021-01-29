@@ -6,7 +6,7 @@
   font-family: "Open Sans";
   src: url(fonts/OpenSans-Regular.ttf) format("truetype");
 }
-.container footer .footer-cols .col-4, .container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-header, .container .main-body .product .product-info .box-add, .container .header .row-ctg, .container .header .row-main form, .container .header .row-main, .container .header .row-nav-bar, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .card .price-button button, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist {
+.container footer .footer-cols .col-4, .container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .header .row-ctg, .container .header .row-main form, .container .header .row-main, .container .header .row-nav-bar, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .card .price-button button, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,12 +73,12 @@
   outline: none;
 }
 
-.container .main-body .cards-related-products .cards-4 .card-with-discount .picture-offer .offer-discount, .container .main-body .product .product-info .tab .tab-header .tab-header-1 p, .container .main-body .product .product-info .tab .tab-header .tab-header-2 p, .container .main-body .product .product-info .tab .tab-header .tab-header-3 p, .container .main-body .product .pictures .offers .offer-delivery, .container .main-body .product .pictures .offers .offer-discount {
+.container .main-body .cards-related-products .cards-4 .card-with-discount .picture-offer .offer-discount, .container .main-body .product .product-info .tab .tab-all-headers .tab-header p, .container .main-body .product .pictures .offers .offer-delivery, .container .main-body .product .pictures .offers .offer-discount {
   background: #F4F8EC;
   border-radius: 12px;
   padding: 4px 10px;
 }
-.container .main-body .cards-related-products .cards-4 .card-with-discount .picture-offer .offer-discount p, .container .main-body .product .product-info .tab .tab-header .tab-header-1 p p, .container .main-body .product .product-info .tab .tab-header .tab-header-2 p p, .container .main-body .product .product-info .tab .tab-header .tab-header-3 p p, .container .main-body .product .pictures .offers .offer-delivery p, .container .main-body .product .pictures .offers .offer-discount p {
+.container .main-body .cards-related-products .cards-4 .card-with-discount .picture-offer .offer-discount p, .container .main-body .product .product-info .tab .tab-all-headers .tab-header p p, .container .main-body .product .pictures .offers .offer-delivery p, .container .main-body .product .pictures .offers .offer-discount p {
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
@@ -363,20 +363,20 @@
 .container .main-body .product .product-info .tab {
   margin-top: 62px;
 }
-.container .main-body .product .product-info .tab .tab-header {
+.container .main-body .product .product-info .tab .tab-all-headers {
   width: 95%;
 }
-.container .main-body .product .product-info .tab .tab-header .tab-header-1, .container .main-body .product .product-info .tab .tab-header .tab-header-2, .container .main-body .product .product-info .tab .tab-header .tab-header-3 {
+.container .main-body .product .product-info .tab .tab-all-headers .tab-header {
   cursor: pointer;
   display: flex;
   align-items: center;
 }
-.container .main-body .product .product-info .tab .tab-header .tab-header-1 h2, .container .main-body .product .product-info .tab .tab-header .tab-header-2 h2, .container .main-body .product .product-info .tab .tab-header .tab-header-3 h2 {
+.container .main-body .product .product-info .tab .tab-all-headers .tab-header h2 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 600;
 }
-.container .main-body .product .product-info .tab .tab-header .tab-header-1 p, .container .main-body .product .product-info .tab .tab-header .tab-header-2 p, .container .main-body .product .product-info .tab .tab-header .tab-header-3 p {
+.container .main-body .product .product-info .tab .tab-all-headers .tab-header p {
   color: #6A983C;
   margin-left: 8px;
 }
@@ -399,32 +399,45 @@
 .container .main-body .product .product-info .tab .line .line-grey .line-green hr {
   border: 1px solid #6A983C;
 }
-.container .main-body .product .product-info .tab .tab-body {
+.container .main-body .product .product-info .tab .line .line-grey .tab-1 {
+  left: 0%;
+  width: 30%;
+}
+.container .main-body .product .product-info .tab .line .line-grey .tab-2 {
+  left: 27%;
+  width: 34%;
+}
+.container .main-body .product .product-info .tab .line .line-grey .tab-3 {
+  left: 66%;
+  width: 34%;
+}
+.container .main-body .product .product-info .tab .tab-all-bodies {
   position: relative;
 }
-.container .main-body .product .product-info .tab .tab-body .tab-body-1, .container .main-body .product .product-info .tab .tab-body .tab-body-2, .container .main-body .product .product-info .tab .tab-body .tab-body-3 {
+.container .main-body .product .product-info .tab .tab-all-bodies .tab-body {
   position: absolute;
-}
-.container .main-body .product .product-info .tab .tab-body .tab-body-2, .container .main-body .product .product-info .tab .tab-body .tab-body-3 {
   display: none;
 }
-.container .main-body .product .product-info .tab .tab-body h4 {
+.container .main-body .product .product-info .tab .tab-all-bodies .active {
+  display: block;
+}
+.container .main-body .product .product-info .tab .tab-all-bodies h4 {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   padding: 32px 0px 8px;
 }
-.container .main-body .product .product-info .tab .tab-body p {
+.container .main-body .product .product-info .tab .tab-all-bodies p {
   font-size: 14px;
   line-height: 19px;
   font-family: "Open Sans";
 }
-.container .main-body .product .product-info .tab .tab-body table {
+.container .main-body .product .product-info .tab .tab-all-bodies table {
   margin-top: 16px;
   width: 90%;
   border-collapse: collapse;
 }
-.container .main-body .product .product-info .tab .tab-body table th {
+.container .main-body .product .product-info .tab .tab-all-bodies table th {
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
@@ -433,14 +446,14 @@
   padding-bottom: 7px;
   width: 33.3%;
 }
-.container .main-body .product .product-info .tab .tab-body table td {
+.container .main-body .product .product-info .tab .tab-all-bodies table td {
   font-size: 14px;
   line-height: 19px;
   font-family: "Open Sans";
   color: #575757;
   padding: 11px 34px 10px 0px;
 }
-.container .main-body .product .product-info .tab .tab-body table .color-C1-I {
+.container .main-body .product .product-info .tab .tab-all-bodies table .color-C1-I {
   background: #FDFDFD;
 }
 .container .main-body .cards-related-products {

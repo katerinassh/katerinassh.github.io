@@ -312,10 +312,10 @@ $color-black:#151515;
                 }
                 .tab {
                     margin-top: 62px;
-                    .tab-header {
+                    .tab-all-headers {
                         @extend %flexibility;
                         width: 95%;
-                        .tab-header-1, .tab-header-2, .tab-header-3 {
+                        .tab-header {
                             cursor: pointer;
                             display: flex;
                             align-items: center;
@@ -348,16 +348,28 @@ $color-black:#151515;
                                     border: 1px solid $color-green;
                                 }
                             }
-                            
+                            .tab-1 {
+                                left: 0%; 
+                                width: 30%;
+                            }
+                            .tab-2 {
+                                left: 27%; 
+                                width: 34%;
+                            }
+                            .tab-3 {
+                                left: 66%; 
+                                width: 34%;
+                            }
                         }
                     }
-                    .tab-body {
+                    .tab-all-bodies {
                         position: relative;
-                        .tab-body-1, .tab-body-2, .tab-body-3 {
+                        .tab-body {
                             position: absolute;
-                        }
-                        .tab-body-2, .tab-body-3 {
                             display: none;
+                        }
+                        .active {
+                            display: block;
                         }
                         h4 {
                             font-weight: 500;
