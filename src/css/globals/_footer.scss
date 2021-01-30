@@ -1,0 +1,61 @@
+@import "../config/mixin.scss";
+@import "../config/variables.scss";
+
+footer {
+    padding: 64px $triple-distance;
+    .footer-cols {
+        .col-4 {
+            align-items: flex-start;
+            display: flex;
+            justify-content: space-between;
+            .col {
+                h3 {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
+                    padding-bottom: 16px;
+                }
+                p {
+                    cursor: pointer;
+                    padding-bottom: 16px;
+                    font-family: 'Open Sans';
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: $color-C2-A;
+                }
+            }
+        }
+    }
+    .footer-tags {
+        margin: 48px $none-distance 48px;
+        h2 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+        }
+        .all-tags {
+            display: flex;
+            flex-wrap: wrap;
+            .tag {
+                cursor: pointer;
+                background: $color-C1-F;
+                border-radius: 12px;
+                padding: 4px 10px;
+                margin: $single-distance $single-distance $single-distance $none-distance;
+                p {
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+    .footers-rights {
+        p {
+            padding: 4px;
+            font-family: 'Open Sans';
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}

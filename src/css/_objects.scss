@@ -1,0 +1,136 @@
+@import "./config/mixin.scss";
+@import "./config/variables.scss";
+
+%select {
+    border-width: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    appearance: none;
+    background-color: #f9f9f900;
+    outline: none;
+}
+
+%input {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-C1-C;
+    background: rgba(249, 249, 249, 0);
+    border-width: $none-distance;
+    outline: none;
+}
+
+%hr-rotated {
+    transform: rotate(90deg);
+    width: 20px;
+    height: 0;
+    opacity: 1;
+    border: 1px solid $color-C1-D;
+    padding: $none-distance;
+}
+
+%button {
+    @extend %flexibility;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+%button-row-buttons {
+    @extend %button;
+    height: 35px;
+    background: $color-white;
+    border: 2px solid $color-white;
+    color: $color-C1-A;
+    img {
+        margin-right: 8px;
+    }
+}
+
+%button-green {
+    @extend %button;
+    background: $color-C2-A;
+    border: 2px solid $color-C2-B;
+    border-radius: 12px;
+    width: 140px;
+    color:$color-white;
+    padding: 12px;
+}
+
+%button-little {
+    @extend %button-green;
+    padding: 0;
+    width: 90px;
+    height: 36px;
+}
+
+%offer {
+    background: $color-C2-E;
+    border-radius: 12px;
+    padding: 4px 10px;
+    p {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-C2-A;
+    }
+}
+
+%product-card {
+    border: 1px solid $color-C1-D;
+    border-radius: 12px;
+    padding: 16px;
+    width: 323px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        height: 180px;
+        width: 100%;
+    }
+    .card-text {
+        padding: $single-distance $none-distance;
+        h2 {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+        }
+        p {
+            font-family: 'Open Sans';
+            font-size: 12px;
+            line-height: 16px;
+            color: $color-C1-B;
+        }
+    }
+}
+
+%product-card-with-discount {
+    @extend %product-card;
+    height: auto;
+    .picture-offer {
+        position: relative;
+        .offer-discount {
+            @extend %offer;
+            position: absolute;
+            margin: 12px 20px;
+        }
+    }
+}
+
+%price-label {
+    display: flex;
+    justify-content: space-between;
+    p {
+        cursor: default;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-C1-A;
+    }
+}
