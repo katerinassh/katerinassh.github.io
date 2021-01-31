@@ -6,13 +6,13 @@
   font-family: "Open Sans";
   src: url(fonts/OpenSans-Regular.ttf) format("truetype");
 }
-.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .header .row-ctg, .header .row-main form, .header .row-main, .header .row-nav-bar {
+.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove, .header .row-ctg, .header .row-main form, .header .row-main, .header .row-nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .header .row-ctg, .header .row-main form, .header .row-main, .header .row-nav-bar {
+.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove, .header .row-ctg, .header .row-main form, .header .row-main, .header .row-nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,7 +133,7 @@
   color: #A9A9A9;
 }
 
-.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .header .row-nav-bar, .header .row-main, .header .row-main form, .header .row-ctg {
+.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove, .header .row-nav-bar, .header .row-main, .header .row-main form, .header .row-ctg {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -203,25 +203,174 @@ footer .footers-rights p {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .modal .modal-content {
-  width: 400px;
+  width: 40%;
+  max-width: 400px;
+  min-width: 200px;
   height: 100%;
   right: 0;
   top: 0;
   position: absolute;
-  background-color: #FFFF;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.modal .modal-content hr {
+  border: 1px solid #F9F9F9;
+}
+.modal .modal-content .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px;
+}
+.modal .modal-content .modal-header h2 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+}
+.modal .modal-content .modal-header .modal-close {
+  display: flex;
+  align-items: center;
+}
+.modal .modal-content .modal-header .modal-close img {
+  width: 12.72px;
+  cursor: pointer;
+}
+.modal .modal-content .modal-header span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #D1D1D1;
+  margin-right: 4px;
+}
+.modal .modal-content .modal-cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  height: 55%;
+  overflow: scroll;
+}
+.modal .modal-content .modal-cards .modal-product {
+  display: flex;
+  padding: 0px 16px 32px;
+}
+.modal .modal-content .modal-cards .modal-product .col-1 {
+  margin-right: 16px;
+}
+.modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove {
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+.modal .modal-content .modal-cards .modal-product .col-1 .wishlist p, .modal .modal-content .modal-cards .modal-product .col-1 .compare p, .modal .modal-content .modal-cards .modal-product .col-1 .remove p {
+  color: #A9A9A9;
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 {
+  width: 100%;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 h3 {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .short-info {
+  display: flex;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-key p, .modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-value p {
+  margin-top: 8px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-key {
+  color: #A9A9A9;
+  margin-right: 14px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-value {
+  color: #151515;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .stars {
+  margin-top: 12.62px;
+  display: flex;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .stars img {
+  margin-right: 4.61px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .price .new-price {
+  font-size: 18px;
+  line-height: 27px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity {
+  width: 96px;
+  height: 32px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity input[type=text] {
+  padding: 6.5px 0px 6.5px 6px;
+  width: 50%;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity hr {
+  margin: auto -10px;
+}
+.modal .modal-content .modal-cards hr {
+  margin: 0px 16px;
+}
+.modal .modal-content .bottom-part {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.modal .modal-content .bottom-part .total-price {
+  padding: 16px 16px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.modal .modal-content .bottom-part .total-price span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.modal .modal-content .bottom-part .total-price h3 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+}
+.modal .modal-content .bottom-part .next-actions {
+  padding: 28px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal .modal-content .bottom-part .next-actions p {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.modal .modal-content .bottom-part .next-actions button {
+  width: 150px;
+  height: 48px;
 }
 
 .show {
   display: block;
 }
 
-.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .header .row-nav-bar, .header .row-main, .header .row-main form, .header .row-ctg {
+.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove, .header .row-nav-bar, .header .row-main, .header .row-main form, .header .row-ctg {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container .main-body .product .product-info .box-add .quantity .form-add-quantity select, .header .row-main form select {
+.container .main-body .product .product-info .box-add .quantity .form-add-quantity select, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity select, .header .row-main form select {
   border-width: 0;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -231,7 +380,7 @@ footer .footers-rights p {
   outline: none;
 }
 
-.container .main-body .product .product-info .box-add .quantity .form-add-quantity input[type=text], .header .row-main form input[type=text] {
+.container .main-body .product .product-info .box-add .quantity .form-add-quantity input[type=text], .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity input[type=text], .header .row-main form input[type=text] {
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 19px;
@@ -241,7 +390,7 @@ footer .footers-rights p {
   outline: none;
 }
 
-.container .main-body .product .product-info .box-add .quantity .form-add-quantity hr, .header .row-main form hr {
+.container .main-body .product .product-info .box-add .quantity .form-add-quantity hr, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity hr, .header .row-main form hr {
   transform: rotate(90deg);
   width: 20px;
   height: 0;
@@ -250,7 +399,7 @@ footer .footers-rights p {
   padding: 0px;
 }
 
-.container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist {
+.container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove {
   justify-content: center;
   border-radius: 12px;
   font-weight: bold;
@@ -260,21 +409,20 @@ footer .footers-rights p {
   outline: none;
 }
 
-.container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist {
-  height: 35px;
+.container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove {
+  justify-content: flex-start;
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
   color: #151515;
 }
-.container .main-body .product .product-info .row-buttons .compare img, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist img {
+.container .main-body .product .product-info .row-buttons .compare img, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist img, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist img, .modal .modal-content .modal-cards .modal-product .col-1 .compare img, .modal .modal-content .modal-cards .modal-product .col-1 .remove img {
   margin-right: 8px;
 }
 
-.container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button {
+.container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button {
   background: #6A983C;
   border: 2px solid #46760A;
   border-radius: 12px;
-  width: 140px;
   color: #FFFFFF;
   padding: 12px;
 }
@@ -347,6 +495,36 @@ footer .footers-rights p {
   font-size: 18px;
   line-height: 27px;
   color: #151515;
+}
+
+.container .main-body .product .product-info .box-add .price, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .price {
+  cursor: default;
+}
+.container .main-body .product .product-info .box-add .price .new-price, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .price .new-price {
+  font-weight: 600;
+  color: #6A983C;
+}
+.container .main-body .product .product-info .box-add .price .old-price, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .price .old-price {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+  text-decoration-line: line-through;
+}
+
+.container .main-body .product .product-info .box-add .quantity .form-add-quantity, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity {
+  display: flex;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  background: #F9F9F9;
+}
+.container .main-body .product .product-info .box-add .quantity .form-add-quantity hr, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity hr {
+  padding: 0px 8px;
+}
+.container .main-body .product .product-info .box-add .quantity .form-add-quantity select, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity select {
+  width: 40%;
+  margin: 0px 6px;
+  background: url(images/ic-chevron-down-black.svg) right no-repeat rgba(249, 249, 249, 0);
 }
 
 * {
@@ -457,47 +635,27 @@ footer .footers-rights p {
 }
 .container .main-body .product .product-info .box-add .price {
   padding: 16px;
-  cursor: default;
 }
 .container .main-body .product .product-info .box-add .price .new-price {
-  font-weight: 600;
   font-size: 26px;
   line-height: 39px;
-  color: #6A983C;
-}
-.container .main-body .product .product-info .box-add .price .old-price {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  color: #A9A9A9;
-  text-decoration-line: line-through;
 }
 .container .main-body .product .product-info .box-add .quantity {
   width: 22%;
   min-width: 95px;
 }
-.container .main-body .product .product-info .box-add .quantity .form-add-quantity {
-  display: flex;
-  border: 1px solid #D1D1D1;
-  border-radius: 12px;
-  background: #F9F9F9;
-  height: 48px;
-}
 .container .main-body .product .product-info .box-add .quantity .form-add-quantity input[type=text] {
-  width: 25%;
   padding: 16px 0px 16px 16px;
+  width: 25%;
 }
 .container .main-body .product .product-info .box-add .quantity .form-add-quantity hr {
   margin: auto 0;
-  padding: 0px 8px;
-}
-.container .main-body .product .product-info .box-add .quantity .form-add-quantity select {
-  width: 38%;
-  margin: 0px 6px;
-  background: url(images/ic-chevron-down-black.svg) right no-repeat rgba(249, 249, 249, 0);
 }
 .container .main-body .product .product-info .box-add .button-add {
   margin-right: 24px;
+}
+.container .main-body .product .product-info .box-add .button-add button {
+  width: 140px;
 }
 .container .main-body .product .product-info .box-add .button-add button img {
   margin-right: 6px;
@@ -507,9 +665,11 @@ footer .footers-rights p {
 }
 .container .main-body .product .product-info .row-buttons .add-to-my-wishlist {
   width: 191px;
+  height: 35px;
   margin-right: 16px;
 }
 .container .main-body .product .product-info .row-buttons .compare {
+  height: 35px;
   width: 119px;
 }
 .container .main-body .product .product-info .tab {

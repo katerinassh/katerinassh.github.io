@@ -43,7 +43,7 @@
 
 %button-row-buttons {
     @extend %button;
-    height: 35px;
+    justify-content: flex-start;
     background: $color-white;
     border: 2px solid $color-white;
     color: $color-C1-A;
@@ -57,7 +57,6 @@
     background: $color-C2-A;
     border: 2px solid $color-C2-B;
     border-radius: 12px;
-    width: 140px;
     color:$color-white;
     padding: 12px;
 }
@@ -132,5 +131,40 @@
         font-size: 18px;
         line-height: 27px;
         color: $color-C1-A;
+    }
+}
+
+%price-new-old {
+    cursor: default;
+    .new-price {
+        font-weight: 600;
+        color: $color-C2-A;
+    }
+    .old-price {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-C1-C;
+        text-decoration-line: line-through;
+    }
+}
+
+%form-add-quantity {
+    display: flex;
+    border: 1px solid $color-C1-D;
+    border-radius: 12px;
+    background: $color-C1-H;
+    input[type=text] {
+        @extend %input;
+    }
+    hr {
+        @extend %hr-rotated;
+        padding: $none-distance 8px;
+    }
+    select {
+        @extend %select;
+        width: 40%;
+        margin: $none-distance 6px;
+        background: url(../assets/images/ic-chevron-down-black.svg) right no-repeat rgba(249, 249, 249, 0);
     }
 }

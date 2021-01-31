@@ -2,8 +2,6 @@ import './css/style.scss'
 
  //Tabs
 
- //Tabs
-
  const tabMainHeader = document.querySelector('.tab-all-headers'),
     tabHeaders = document.querySelectorAll('.tab-header'),
     tabBodies = document.querySelectorAll('.tab-body'),
@@ -56,3 +54,16 @@ btn.addEventListener('click', addToBusket);
 // btns.forEach(item => {
 //     item.addEventListener('click', addToBusket);
 // })
+
+// Modal window
+const triggerModal = document.querySelector('.icon-busket'),
+    modal = document.querySelector('.modal'),
+    close = document.querySelector('.modal-close');
+
+triggerModal.addEventListener('click', () => {
+    modal.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+    modal.classList.remove('show');
+})

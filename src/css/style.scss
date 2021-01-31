@@ -126,46 +126,24 @@
                     height: 89px;
                     @extend %flexibility;
                     .price {
+                        @extend %price-new-old;
                         padding: 16px;
-                        cursor: default;
                         .new-price {
-                            font-weight: 600;
                             font-size: 26px;
                             line-height: 39px;
-                            color: $color-C2-A;
-                        }
-                        .old-price {
-                            font-weight: 600;
-                            font-size: 12px;
-                            line-height: 18px;
-                            color: $color-C1-C;
-                            text-decoration-line: line-through;
                         }
                     }
                     .quantity {
                         width: 22%;
                         min-width: 95px;
                         .form-add-quantity {
-                            display: flex;
-                            border: 1px solid $color-C1-D;
-                            border-radius: 12px;
-                            background: $color-C1-H;
-                            height: 48px;
+                            @extend %form-add-quantity;
                             input[type=text] {
-                                @extend %input;
-                                width: 25%;
                                 padding: $single-distance $none-distance $single-distance $single-distance;
+                                width: 25%;
                             }
                             hr {
-                                @extend %hr-rotated;
                                 margin: auto 0;
-                                padding: $none-distance 8px;
-                            }
-                            select {
-                                @extend %select;
-                                width: 38%;
-                                margin: $none-distance 6px;
-                                background: url(../assets/images/ic-chevron-down-black.svg) right no-repeat rgba(249, 249, 249, 0);
                             }
                         }
                     }
@@ -173,6 +151,7 @@
                         margin-right: 24px;
                         button {
                             @extend %button-green;
+                            width: 140px;
                             img {
                                 margin-right: 6px;
                             }
@@ -184,10 +163,12 @@
                     .add-to-my-wishlist {
                         @extend %button-row-buttons;
                         width: 191px;
+                        height: 35px;
                         margin-right: $single-distance;
                     }
                     .compare {
                         @extend %button-row-buttons;
+                        height: 35px;
                         width: 119px;
                     }
                 }
