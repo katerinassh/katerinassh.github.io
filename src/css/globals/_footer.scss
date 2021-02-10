@@ -1,6 +1,3 @@
-@import "../config/mixin.scss";
-@import "../config/variables.scss";
-
 footer {
     padding: 64px $triple-distance;
     .footer-cols {
@@ -9,15 +6,15 @@ footer {
             display: flex;
             justify-content: space-between;
             .col {
+                p, h3 {
+                    padding-bottom: $single-distance; 
+                }
                 h3 {
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 27px;
-                    padding-bottom: 16px;
                 }
-                p {
-                    cursor: pointer;
-                    padding-bottom: 16px;
+                a {
                     font-family: 'Open Sans';
                     font-size: 14px;
                     line-height: 19px;

@@ -6,371 +6,13 @@
   font-family: "Open Sans";
   src: url(fonts/OpenSans-Regular.ttf) format("truetype");
 }
-.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove, .header .row-ctg, .header .row-main form, .header .row-main, .header .row-nav-bar {
+.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .header .row-3 .ctg, .header .row-2 .main form, .header .row-2 .main, .header .row-1 .nav-bar, .container .main-body .product .product-info .box-add .button-add button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove, .header .row-ctg, .header .row-main form, .header .row-main, .header .row-nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.header .row-nav-bar {
-  height: 48px;
-  padding: 0px 45px 0px 45px;
-}
-.header .row-nav-bar p {
-  font-family: "Open Sans";
-  font-size: 12px;
-  line-height: 16px;
-  color: #6A983C;
-  cursor: pointer;
-}
-.header .row-nav-bar .start {
-  display: flex;
-  width: 36%;
-  justify-content: space-between;
-}
-.header .row-nav-bar .end {
-  display: flex;
-  width: 20%;
-  justify-content: space-between;
-}
-.header hr {
-  opacity: 0.05;
-  border: 1px solid #151515;
-  width: 95%;
-  margin: auto;
-}
-.header .row-main {
-  height: 146px;
-  padding: 0px 45px 0px 45px;
-}
-.header .row-main .icons {
-  display: flex;
-  width: 8%;
-  justify-content: space-between;
-}
-.header .row-main .icons .icon-busket {
-  background: url(images/ic-ecommerce-basket.svg) 100% 0% no-repeat;
-  position: relative;
-  width: 33px;
-  cursor: pointer;
-}
-.header .row-main .icons .icon-busket img {
-  position: relative;
-  bottom: -11px;
-}
-.header .row-main .icons .icon-busket p {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  color: #FFFFFF;
-  position: absolute;
-  bottom: 0.5px;
-  left: 24%;
-}
-.header .row-main .icons .icon-busket .one {
-  left: 29%;
-}
-.header .row-main .icons .icon-busket .more-than-nine {
-  left: 19%;
-  font-size: 10px;
-}
-.header .row-main .icons img {
-  cursor: pointer;
-  height: 24px;
-}
-.header .row-main form {
-  background: #F9F9F9;
-  border-radius: 12px;
-  border: 1px solid #D1D1D1;
-  height: 42px;
-  width: 45%;
-  min-width: 305px;
-  padding: 0px 16px;
-}
-.header .row-main form select {
-  width: 40%;
-  min-width: 115px;
-  font-size: 15px;
-  line-height: 22px;
-  background: url(images/ic-chevron-down.svg) no-repeat right #151515;
-}
-.header .row-main form input[type=text] {
-  width: 262px;
-}
-.header .row-ctg {
-  height: 55px;
-  background: #F9F9F9;
-  padding: 0px 45px 0px 45px;
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-}
-.header .row-ctg p {
-  cursor: pointer;
-}
-.header .row-way {
-  padding: 16px 45px;
-  font-family: "Open Sans";
-  font-size: 12px;
-  line-height: 16px;
-}
-.header .row-way p {
-  cursor: pointer;
-}
-.header .row-way span {
-  color: #A9A9A9;
-}
-
-.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove, .header .row-nav-bar, .header .row-main, .header .row-main form, .header .row-ctg {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer {
-  padding: 64px 45px;
-}
-footer .footer-cols .col-4 {
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-between;
-}
-footer .footer-cols .col-4 .col h3 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  padding-bottom: 16px;
-}
-footer .footer-cols .col-4 .col p {
-  cursor: pointer;
-  padding-bottom: 16px;
-  font-family: "Open Sans";
-  font-size: 14px;
-  line-height: 19px;
-  color: #6A983C;
-}
-footer .footer-tags {
-  margin: 48px 0px 48px;
-}
-footer .footer-tags h2 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-}
-footer .footer-tags .all-tags {
-  display: flex;
-  flex-wrap: wrap;
-}
-footer .footer-tags .all-tags .tag {
-  cursor: pointer;
-  background: #F5F5F5;
-  border-radius: 12px;
-  padding: 4px 10px;
-  margin: 16px 16px 16px 0px;
-}
-footer .footer-tags .all-tags .tag p {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-}
-footer .footers-rights p {
-  padding: 4px;
-  font-family: "Open Sans";
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.modal {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.modal .modal-content {
-  width: 40%;
-  max-width: 400px;
-  min-width: 200px;
-  height: 100%;
-  right: 0;
-  top: 0;
-  position: absolute;
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-}
-.modal .modal-content hr {
-  border: 1px solid #F9F9F9;
-}
-.modal .modal-content .modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 16px;
-}
-.modal .modal-content .modal-header h2 {
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 39px;
-}
-.modal .modal-content .modal-header .modal-close {
-  display: flex;
-  align-items: center;
-}
-.modal .modal-content .modal-header .modal-close img {
-  width: 12.72px;
-  cursor: pointer;
-}
-.modal .modal-content .modal-header span {
-  font-size: 12px;
-  line-height: 16px;
-  color: #D1D1D1;
-  margin-right: 4px;
-}
-.modal .modal-content .modal-cards {
-  display: flex;
-  flex-direction: column;
-  max-width: 700px;
-  height: 55%;
-  overflow: scroll;
-}
-.modal .modal-content .modal-cards .modal-product {
-  display: flex;
-  padding: 0px 16px 32px;
-}
-.modal .modal-content .modal-cards .modal-product .col-1 {
-  margin-right: 16px;
-}
-.modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove {
-  justify-content: flex-start;
-  margin-top: 8px;
-}
-.modal .modal-content .modal-cards .modal-product .col-1 .wishlist p, .modal .modal-content .modal-cards .modal-product .col-1 .compare p, .modal .modal-content .modal-cards .modal-product .col-1 .remove p {
-  color: #A9A9A9;
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 {
-  width: 100%;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 h3 {
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 500;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .short-info {
-  display: flex;
-  font-family: "Open Sans";
-  font-size: 12px;
-  line-height: 16px;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-key p, .modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-value p {
-  margin-top: 8px;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-key {
-  color: #A9A9A9;
-  margin-right: 14px;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-value {
-  color: #151515;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .stars {
-  margin-top: 12.62px;
-  display: flex;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .stars img {
-  margin-right: 4.61px;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 16px;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .price .new-price {
-  font-size: 18px;
-  line-height: 27px;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity {
-  width: 96px;
-  height: 32px;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity input[type=text] {
-  padding: 6.5px 0px 6.5px 6px;
-  width: 50%;
-}
-.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity hr {
-  margin: auto -10px;
-}
-.modal .modal-content .modal-cards hr {
-  margin: 0px 16px;
-}
-.modal .modal-content .bottom-part {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-.modal .modal-content .bottom-part .total-price {
-  padding: 16px 16px 24px;
-  display: flex;
-  flex-direction: column;
-}
-.modal .modal-content .bottom-part .total-price span {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 8px;
-}
-.modal .modal-content .bottom-part .total-price h3 {
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 39px;
-}
-.modal .modal-content .bottom-part .next-actions {
-  padding: 28px 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.modal .modal-content .bottom-part .next-actions p {
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 22px;
-  cursor: pointer;
-}
-.modal .modal-content .bottom-part .next-actions button {
-  width: 150px;
-  height: 48px;
-}
-
-.show {
-  display: block;
-}
-
-.container .main-body .cards-related-products .cards-4, .container .main-body .cards-related-products .cards-title, .container .main-body .product .product-info .tab .tab-all-headers, .container .main-body .product .product-info .box-add, .container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove, .header .row-nav-bar, .header .row-main, .header .row-main form, .header .row-ctg {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container .main-body .product .product-info .box-add .quantity .form-add-quantity select, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity select, .header .row-main form select {
+.header .row-2 .main form select, .container .main-body .product .product-info .box-add .quantity .form-add-quantity select, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity select {
   border-width: 0;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -380,7 +22,7 @@ footer .footers-rights p {
   outline: none;
 }
 
-.container .main-body .product .product-info .box-add .quantity .form-add-quantity input[type=text], .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity input[type=text], .header .row-main form input[type=text] {
+.header .row-2 .main form input[type=text], .container .main-body .product .product-info .box-add .quantity .form-add-quantity input[type=text], .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity input[type=text] {
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 19px;
@@ -390,7 +32,7 @@ footer .footers-rights p {
   outline: none;
 }
 
-.container .main-body .product .product-info .box-add .quantity .form-add-quantity hr, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity hr, .header .row-main form hr {
+.header .row-2 .main form hr, .container .main-body .product .product-info .box-add .quantity .form-add-quantity hr, .modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity hr {
   transform: rotate(90deg);
   width: 20px;
   height: 0;
@@ -399,7 +41,7 @@ footer .footers-rights p {
   padding: 0px;
 }
 
-.container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove {
+.container .main-body .product .product-info .box-add .button-add button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .container .main-body .product .product-info .row-buttons .compare, .container .main-body .product .product-info .row-buttons .add-to-my-wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove {
   justify-content: center;
   border-radius: 12px;
   font-weight: bold;
@@ -419,7 +61,7 @@ footer .footers-rights p {
   margin-right: 8px;
 }
 
-.container .main-body .product .product-info .box-add .button-add button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button, .modal .modal-content .bottom-part .next-actions button {
+.container .main-body .product .product-info .box-add .button-add button, .modal .modal-content .bottom-part .next-actions button, .container .main-body .cards-related-products .cards-4 .card-with-discount .price-button button, .container .main-body .cards-related-products .cards-4 .price-button button {
   background: #6A983C;
   border: 2px solid #46760A;
   border-radius: 12px;
@@ -527,11 +169,359 @@ footer .footers-rights p {
   background: url(images/ic-chevron-down-black.svg) right no-repeat rgba(249, 249, 249, 0);
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header .row-1 {
+  margin: 0px 45px;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.05);
+}
+.header .row-1 .nav-bar {
+  padding: 16px 0px;
+}
+.header .row-1 .nav-bar a, .header .row-1 .nav-bar p {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  color: #6A983C;
+}
+.header .row-1 .nav-bar .start {
+  display: flex;
+  width: 36%;
+  justify-content: space-between;
+}
+.header .row-1 .nav-bar .end {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+.header .row-2 {
+  margin: 0px 45px;
+}
+.header .row-2 .main {
+  padding: 56px 0px;
+}
+.header .row-2 .main .icons {
+  display: flex;
+  width: 8%;
+  justify-content: space-between;
+}
+.header .row-2 .main .icons .icon-busket {
+  background: url(images/ic-ecommerce-basket.svg) 100% 0% no-repeat;
+  position: relative;
+  width: 33px;
+  cursor: pointer;
+}
+.header .row-2 .main .icons .icon-busket img {
+  position: relative;
+  bottom: -11px;
+}
+.header .row-2 .main .icons .icon-busket .normal {
+  left: 24%;
+  font-size: 12px;
+}
+.header .row-2 .main .icons .icon-busket p {
+  font-weight: 600;
+  line-height: 18px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0.5px;
+}
+.header .row-2 .main .icons img {
+  cursor: pointer;
+  height: 24px;
+}
+.header .row-2 .main form {
+  background: #F9F9F9;
+  border-radius: 12px;
+  border: 1px solid #D1D1D1;
+  height: 42px;
+  width: 45%;
+  min-width: 305px;
+  padding: 0px 16px;
+}
+.header .row-2 .main form select {
+  width: 40%;
+  min-width: 115px;
+  font-size: 15px;
+  line-height: 22px;
+  background: url(images/ic-chevron-down.svg) no-repeat right #F9F9F9;
+}
+.header .row-2 .main form input[type=text] {
+  width: 55%;
+  min-width: 150px;
+}
+.header .row-3 {
+  padding: 0px 45px;
+  background: #F9F9F9;
+}
+.header .row-3 .ctg {
+  padding: 16px 0px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+.header .row-3 .ctg a {
+  color: #151515;
+}
+.header .row-4 {
+  margin: 0px 45px;
+}
+.header .row-4 .way {
+  padding: 16px 0px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.header .row-4 .way a {
+  font-family: "Open Sans";
+  color: #A9A9A9;
+}
+.header .row-4 .way span {
+  font-family: "Open Sans";
+}
+
+footer {
+  padding: 64px 45px;
+}
+footer .footer-cols .col-4 {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-cols .col-4 .col p, footer .footer-cols .col-4 .col h3 {
+  padding-bottom: 16px;
+}
+footer .footer-cols .col-4 .col h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+footer .footer-cols .col-4 .col a {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+  color: #6A983C;
+}
+footer .footer-tags {
+  margin: 48px 0px 48px;
+}
+footer .footer-tags h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+footer .footer-tags .all-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .footer-tags .all-tags .tag {
+  cursor: pointer;
+  background: #F5F5F5;
+  border-radius: 12px;
+  padding: 4px 10px;
+  margin: 16px 16px 16px 0px;
+}
+footer .footer-tags .all-tags .tag p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+footer .footers-rights p {
+  padding: 4px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal .modal-content {
+  width: 40%;
+  max-width: 400px;
+  min-width: 200px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.modal .modal-content .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+.modal .modal-content .modal-header h2 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+}
+.modal .modal-content .modal-header .modal-close {
+  display: flex;
+  align-items: center;
+}
+.modal .modal-content .modal-header .modal-close img {
+  width: 12.72px;
+  cursor: pointer;
+}
+.modal .modal-content .modal-header span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #D1D1D1;
+  margin-right: 4px;
+}
+.modal .modal-content .modal-cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  height: 55%;
+  overflow: scroll;
+  margin: 0px 16px;
+}
+.modal .modal-content .modal-cards .modal-product {
+  display: flex;
+  padding: 16px 0px;
+  border-bottom: 1px solid #F9F9F9;
+}
+.modal .modal-content .modal-cards .modal-product .col-1 {
+  margin-right: 16px;
+}
+.modal .modal-content .modal-cards .modal-product .col-1 .wishlist, .modal .modal-content .modal-cards .modal-product .col-1 .compare, .modal .modal-content .modal-cards .modal-product .col-1 .remove {
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+.modal .modal-content .modal-cards .modal-product .col-1 .wishlist p, .modal .modal-content .modal-cards .modal-product .col-1 .compare p, .modal .modal-content .modal-cards .modal-product .col-1 .remove p {
+  color: #A9A9A9;
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 {
+  width: 100%;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 h3 {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .short-info {
+  display: flex;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-key p, .modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-value p {
+  margin-top: 8px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-key {
+  color: #A9A9A9;
+  margin-right: 14px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .short-info .col-value {
+  color: #151515;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .stars {
+  margin-top: 12.62px;
+  display: flex;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .stars img {
+  margin-right: 4.61px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .price .new-price {
+  font-size: 18px;
+  line-height: 27px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity {
+  width: 96px;
+  height: 32px;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity input[type=text] {
+  padding: 6.5px 0px 6.5px 6px;
+  width: 50%;
+}
+.modal .modal-content .modal-cards .modal-product .col-2 .row-price-quality .form-add-quantity hr {
+  margin: auto -10px;
+}
+.modal .modal-content .bottom-part {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.modal .modal-content .bottom-part .total-price {
+  padding: 16px 16px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.modal .modal-content .bottom-part .total-price span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.modal .modal-content .bottom-part .total-price h3 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+}
+.modal .modal-content .bottom-part .next-actions {
+  padding: 28px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #EBEBEB;
+}
+.modal .modal-content .bottom-part .next-actions p {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.modal .modal-content .bottom-part .next-actions button {
+  width: 150px;
+  height: 48px;
+}
+
+.show {
+  display: block;
+}
+
+.one {
+  left: 29%;
+}
+
+.plus {
+  left: 19%;
+  font-size: 10px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
 }
 
 .container .main-body .product {

@@ -18,14 +18,11 @@
         background-color: $color-white;
         display: flex;
         flex-direction: column;
-        hr {
-            border: 1px solid $color-C1-H;
-        }
         .modal-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 24px $single-distance;
+            padding: $single-distance/2 $single-distance;
             h2 {
                 font-weight: 600;
                 font-size: 26px;
@@ -52,9 +49,11 @@
             max-width: 700px;
             height: 55%;
             overflow: scroll;
+            margin: $none-distance $single-distance;
             .modal-product {
                 display: flex;
-                padding: $none-distance $single-distance $double-distance;
+                padding: $single-distance $none-distance;
+                border-bottom: 1px solid $color-C1-H;
                 .col-1 {
                     margin-right: $single-distance;
                     .wishlist, .compare, .remove {
@@ -127,9 +126,6 @@
                     }
                 }
             }
-            hr {
-                margin: $none-distance $single-distance;
-            }
         }
         .bottom-part {
             position: absolute;
@@ -156,6 +152,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                border-top: 1px solid $color-C1-E;
                 p {
                     font-weight: bold;
                     font-size: 15px;

@@ -1,11 +1,11 @@
 @import "fonts.scss";
+@import "config/variables.scss";
 @import "config/mixin.scss";
+@import "objects.scss";
 @import "globals/header.scss";
 @import "globals/footer.scss";
 @import "globals/modal.scss";
-@import "config/variables.scss";
 @import "utilities.scss";
-@import "objects.scss";
 
 
 * {
@@ -15,6 +15,9 @@
     font-family: 'Poppins';
 }
 
+a {
+    text-decoration: none;
+}
 
 .container {
     .main-body {
